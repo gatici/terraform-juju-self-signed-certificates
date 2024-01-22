@@ -1,4 +1,8 @@
-resource "juju_application" "self-signed-certs" {
+resource "juju_model" "test" {
+  name = var.model_name
+}
+
+resource "juju_application" "self-signed-certificates" {
   name = "self-signed-certificates"
   model = var.model_name
 
